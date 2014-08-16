@@ -28,7 +28,8 @@ describe TmonRss::App do
 
     item.title.should == "[일본] 오키나와 3일 왕복항공권, 티웨이항공 - 99000원"
     item.link.should == "http://www.ticketmonster.co.kr/deal/47207337/101601/101629"
-    item.description.should == "[유류+택스] 90,000원별도 / [성인 1인 기준]"
+    item.description.should == "<img src=\"http://img1.tmon.kr/deals/4720/47207337/47207337_catlist_2col_v2_b3f41_1388712985production.jpg\" alt=\"deal-thumbnail\" />[유류+택스] 90,000원별도 / [성인 1인 기준]"
+
   end
 
   it "should crawl Tmon and return rss with two deals" do
@@ -42,14 +43,6 @@ describe TmonRss::App do
 
     item.title.should == "[호텔] 호텔 오사카 베이타워, 초고층 객실 - 71000원"
     item.link.should == "http://www.ticketmonster.co.kr/deal/47290385/101601/101629"
-    item.description.should == "전 객실 30층 이상 /01.26 ~ 02.28"
+    item.description.should == "<img src=\"http://img2.tmon.kr/deals/4729/47290385/47290385_catlist_2col_v2_1e1a7_1388737795production.jpg\" alt=\"deal-thumbnail\" />전 객실 30층 이상 /01.26 ~ 02.28"
   end
 end
-
-
-
-
-
-
-
-
